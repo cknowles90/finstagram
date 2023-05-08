@@ -55,3 +55,51 @@ def if_teacher(person)
 end
 
 puts if_teacher(web_dev_class_v3[0])
+
+
+for number in (1..100)
+    if number % 3 == 0 && number % 5 == 0
+        puts 'FizzBuzz'
+    elsif number % 3 == 0
+        puts 'Fizz'
+    elsif number % 5 == 0
+        puts 'Buzz'
+    else 
+        puts number 
+    end
+end
+
+def fizz_buzz(start, finish) 
+    for number in (1..100)
+        # if number % 3 == 0 && number % 5 == 0
+        if number % 15 == 0
+            puts 'FizzBuzz'
+        elsif number % 3 == 0
+            puts 'Fizz'
+        elsif number % 5 == 0
+            puts 'Buzz'
+        else 
+            puts number 
+        end
+    end
+end
+
+fizz_buzz(start, end)
+
+def yellow_pager(string)
+    phone = ""
+    # loop through string
+    string.each_char do |letter|
+    for letter in string
+        if letter == "A" || letter = "B" || letter == "C"
+            phone = phone + "2"
+        elsif letter = "D" || letter = "E" || letter "F"
+            phone = phone + "3"
+        else
+            phone += letter
+        end
+    end
+    puts phone
+end
+
+yellow_pager('mama')
